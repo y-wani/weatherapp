@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #52c4d8, #196e89);
+
+  font-family: 'Arial', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 550px;
+  width: 350px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px 25px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+
+.Search-container {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 5px;
+  align-items: center;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.location-icon {
+  margin-right: 10px;
 }
+
+.Search-button {
+  background-color: #3498db;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-left: 20px;
+}
+
+.Search-button:hover {
+  background-color: #2980b9;
+}
+
+.weather-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+}
+
+.input-box {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+
+.input-box::placeholder {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Degree-logo {
+  margin-bottom: 4px;
+  margin-left: -4.5px;
+}
+
+.Temp--box {
+  font-size: 55px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 5px;
+}
+
+.details_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.deets {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 70px;
+ 
+}
+
+.Humidity,
+.Windspeed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 5px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+ 
+}
+
+.detail-value {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.icon {
+  margin-bottom: 7px;
+}
+
+.weather--description {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 4px;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+.invalid-location .Search-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 50px;
+}
+
+
